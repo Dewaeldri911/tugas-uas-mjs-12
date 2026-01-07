@@ -2,15 +2,15 @@ name: Script Workflow (Lint, Security, Test, Env)
 
 # Trigger Ketika ada push dan pull request di branch 'main'
 on:
-	push:
-		branches: [ main ]
-	pull_request:
-		branches: [ main ]
+        push:
+        branches: [ main ]
+        pull_request:
+        branches: [ main ]
 jobs:
-	build-and-test:
-		runs-on: ubuntu-latest
-		permissions:
-			contents: read
+        build-and-test:
+                runs-on: ubuntu-latest
+                permissions:
+                        contents: read
       security-events: write
 
     # define env variables
